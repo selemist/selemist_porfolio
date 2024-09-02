@@ -20,25 +20,25 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 2em;
 }
 
 /* Saludo hola mundo, hola a todos */
 
 .contenido {
-    margin: 20px;
-    height: 100px;
+    margin: 1em;
+    height: 5rem;
     overflow: hidden;
     font-family: sans-serif;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 2em;
+    line-height: 1.3em;
     color: #ecf0f1;
 }
 
 .contenido__container {
     font-weight: 600;
     overflow: hidden;
-    height: 40px;
+    height: 2.6rem;
     padding: 0 40px;
     position: relative;
 }
@@ -132,10 +132,10 @@ header {
 
 /*Las redes sociales y el color blanco de los íconos*/
 #links {
-    font-size: 18px;
+    font-size: 1em;
     color: #cccccc;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 0.5rem;
     transition: all 0.4s ease-in-out;
 
     &:hover {
@@ -146,15 +146,15 @@ header {
 
 /* Header con circulitos todo lindo */
 .container {
-    margin: 15px;
+    margin: 2em;
 }
 
 .container a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 1.4em;
+    margin: 0.5em;
+    padding: 0.5em;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -210,28 +210,27 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
-    padding: 20px 30px;
+    padding: 1em 3em;
     box-sizing: border-box;
     text-align: center;
 }
 
 .contentlog h1 {
-    font-size: 26px;
-    margin: 10px 0 0;
+    font-size: 1.5em;
+    margin: 1em 0 0;
     font-weight: lighter;
     text-transform: uppercase;
     color: #eeeeee;
 }
 
 .contentlog p {
-    font-size: 20px;
+    font-size: 1em;
     font-weight: lighter;
     text-align: center;
 }
 
 .contentlog span a {
-    font-size: 15px;
+    font-size: 0.5em;
     color: #cccccc;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
@@ -239,13 +238,13 @@ header {
 
 
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 10em;
+    height: 10em;
     box-sizing: border-box;
-    border: 5px white solid;
+    border: 0.2em white solid;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0.5em 0.5em 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite forwards;
     display: flex;
@@ -285,19 +284,18 @@ header {
     padding: 2em;
     margin: 0 auto 15%;
     color: rgb(255, 255, 255);
-    border-radius: 10px;
     max-width: 70%;
-    letter-spacing: 3px;
+    letter-spacing: 0.2rem;
 }
 
 .aboutme p {
-    font-size: 15px;
+    font-size: 1em;
     padding: 4em;
 }
 
 #t2 {
-    padding: 10px;
-    font-size: 25px;
+    padding: 1em;
+    font-size: 2em;
 }
 
 #about {
@@ -312,8 +310,8 @@ header {
 }
 
 #t1 {
-    padding: 12px;
-    font-size: 45px;
+    padding: 0.5em;
+    font-size: 3em;
 }
 
 /*Imágenes*/
@@ -383,6 +381,7 @@ header {
     border-radius: 7em;
 }
 
+/*Contacto*/
 
 nav {
     padding: 6%;
@@ -468,3 +467,59 @@ box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 -moz-transform: scale(1.05);
 transform: scale(1.05);
 }
+
+/*Para que sea responsive*/
+
+/*Para Celulares*/
+
+@media (max-width: 568px),(max-height:568px) {
+
+.separacion, .contact-right , .contenido { 
+        display: none;
+    }
+
+#mediaquery_header{
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4rem;
+}
+
+.contentlog ,.container_logo{
+font-size: 0.8rem;
+padding-bottom: 1rem;
+}
+.aboutme{
+    font-size: 0.6rem;
+    padding: 0;
+}
+#t2{
+    font-size: 0.8rem;
+}
+.trabajos{
+font-size: 0.5rem;
+}
+form {
+padding-top: 4rem;
+padding-bottom: 2rem;
+}
+.contact-inputs{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.contact-left-title h1{
+font-size: 2rem;
+}
+
+.contact-left button{
+font-size: 0.8em;
+}
+
+    }
+    @media(max-width:768px),(max-height:1020px){
+        #contact img{
+            max-width: 90%;
+            max-height: 40%;
+        }
+    }
